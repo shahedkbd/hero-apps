@@ -4,9 +4,10 @@ import downloadsIcon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
 
 
+
 const Installation = () => {
     const [installedApps, setInstalledApps] = useState([]);
-
+    const [sortOption, setSortOption] = useState('');
 
     useEffect(() => {
         const stored = JSON.parse(localStorage.getItem('installedApps')) || [];
@@ -19,6 +20,21 @@ const Installation = () => {
         localStorage.setItem('installedApps', JSON.stringify(updatedApps));
     };
 
+    const handleSort = (option) => {
+        setSortOption(option);
+        let sortedApps = [...installedApps];
+
+        if (option === 'downloads') {
+            sortedApps.sort((a, b) => b.downloads - a.downloads);
+        } else if (option === 'rating') {
+            sortedApps.sort((a, b) => b.ratingAvg - a.ratingAvg);
+        } else if (option === 'size') {
+            sortedApps.sort((a, b) => a.size - b.size);
+        }
+
+        setInstalledApps(sortedApps);
+    };
+
     return (
         <div>
             <div className='text-center space-y-2 py-10 bg-gray-100'>
@@ -26,19 +42,26 @@ const Installation = () => {
                 <p>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='bg-gray-100'>
-                <div className='flex justify-between'>
-                    <h3>({installedApps.length}) Apps Found</h3>
-                    <select defaultValue="Pick a color" className="select">
-                        <option disabled={true}>Pick a color</option>
-                        <option>Crimson</option>
-                        <option>Amber</option>
-                        <option>Velvet</option>
-                    </select>
-                </div>
                 <div className="p-6">
-                    <h1 className="text-3xl font-bold mb-4">
-                        Installed Apps ({installedApps.length})
-                    </h1>
+                    <div className=' flex justify-between'>
+                        <div>
+                            <h1 className="text-3xl font-bold mb-4">
+                                ({installedApps.length}) Apps Found
+                            </h1>
+                        </div>
+                        <div>
+                            <select
+                                value={sortOption}
+                                onChange={(e) => handleSort(e.target.value)}
+                                className="border rounded-lg p-2 text-sm"
+                            >
+                                <option value="">Sort By</option>
+                                <option value="downloads">Downloads (High → Low)</option>
+                                <option value="rating">Rating (High → Low)</option>
+                                <option value="size">Size (Low → High)</option>
+                            </select>
+                        </div>
+                    </div>
 
                     {installedApps.length === 0 ? (
                         <p className="text-gray-600">No apps installed yet.</p>
@@ -57,7 +80,7 @@ const Installation = () => {
                                                 <div className='flex gap-2'>
                                                     <img src={downloadsIcon} className='h-[20px]' alt="" />
                                                     <p className="text-sm mb-1">{app.downloads}</p>
-                                                </div>                                              
+                                                </div>
                                                 <div className='flex gap-2'>
                                                     <img src={ratingIcon} className='h-[20px]' alt="" />
                                                     <p className="text-sm mb-1">{app.ratingAvg}</p>
