@@ -1,0 +1,290 @@
+[
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "TaskMaster Pro",
+    "companyName": "Productive Apps Inc.",
+    "id": 1,
+    "description": "TaskMaster Pro is an all-in-one productivity and project management app designed to streamline your daily workflow, enhance personal efficiency, and facilitate team collaboration. With an intuitive interface, TaskMaster Pro allows users to create, prioritize, and track tasks with ease. The app includes advanced features such as recurring tasks, deadline reminders, project timelines, task dependency tracking, and progress analytics. Users can also integrate their calendars, emails, and cloud storage accounts to ensure that all tasks and important events are synchronized in one place. Team members can collaborate seamlessly by assigning tasks, leaving comments, sharing files, and receiving notifications in real-time. TaskMaster Pro also provides AI-powered suggestions for task prioritization, smart categorization, and productivity insights based on user habits. This ensures that individuals and teams can maximize output while maintaining a healthy work-life balance. Whether you are managing personal goals, academic projects, or professional assignments, TaskMaster Pro acts as a central hub for organizing your tasks efficiently and achieving your objectives with minimal stress. Its offline functionality allows users to work without internet connectivity and sync changes once reconnected. With a robust security system that encrypts all sensitive data and compliance with global data protection regulations, TaskMaster Pro ensures privacy and security. From creating simple to-do lists to managing complex projects, this app is designed to transform the way you work and achieve success in every endeavor, providing an unmatched combination of usability, functionality, and reliability for productivity enthusiasts.",
+    "size": 120,
+    "reviews": 1350,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 32 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 843 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "FitLife Tracker",
+    "companyName": "HealthTech Solutions",
+    "id": 2,
+    "description": "FitLife Tracker is an advanced health and fitness application built to help users monitor and improve their physical wellness. The app tracks daily activity such as walking, running, cycling, and gym workouts while calculating burned calories, distance, and duration with precision. It also tracks sleep patterns, heart rate, and stress levels using wearable devices and manual inputs. FitLife Tracker provides personalized fitness plans tailored to the user’s age, weight, fitness level, and goals. Guided exercises, video tutorials, and motivational challenges keep users engaged and committed to their wellness journey. Users can log meals, track calorie intake, and receive insights on nutrition and hydration for better dietary management. Social features allow users to join communities, share progress, participate in competitions, and motivate friends. FitLife Tracker integrates seamlessly with smartwatches, fitness bands, and mobile sensors to provide real-time updates and analytics. Detailed charts visualize improvements, trends, and performance over time. The app ensures privacy with encrypted health data storage and secure login authentication. Perfect for beginners looking to adopt a healthy lifestyle or professional athletes aiming for peak performance, FitLife Tracker transforms everyday health tracking into an interactive and engaging experience with actionable insights.",
+    "size": 95,
+    "reviews": 2180,
+    "ratingAvg": 4.7,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 28 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1282 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "Recipe Genie",
+    "companyName": "Kitchen Wizards",
+    "id": 3,
+    "description": "Recipe Genie is a comprehensive culinary app that brings together thousands of recipes from around the world, catering to beginners, enthusiasts, and professional chefs. Users can search for recipes based on ingredients, dietary restrictions, cuisine type, cooking time, difficulty level, and nutritional preferences. The app provides step-by-step cooking instructions, high-resolution images, and video tutorials to ensure users can successfully create every dish. Recipe Genie includes meal planning tools, automatic shopping list generation, and a pantry tracker to reduce food waste and save money. Advanced AI suggestions recommend recipes based on season, trending dishes, and user preferences. Nutritional calculators help users monitor calorie intake, macronutrients, and portion sizes. Community features allow sharing recipes, rating dishes, posting photos, and exchanging tips. Users can also save favorite recipes, create collections, and set cooking reminders. Offline access ensures uninterrupted usability. Recipe Genie focuses on promoting healthy eating, culinary creativity, and social engagement by turning cooking into a fun, educational, and satisfying experience for everyone. With continuous updates and curated seasonal content, it’s the ultimate cooking companion.",
+    "size": 85,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 565 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "BudgetBuddy",
+    "companyName": "Finance Solutions Ltd.",
+    "id": 4,
+    "description": "BudgetBuddy is a personal finance and money management app that helps users track income, expenses, and savings goals in a simple yet powerful way. Users can create customized budgets, categorize transactions, set alerts for upcoming bills, and monitor cash flow. The app provides detailed analytics and visual reports, showing trends in spending, areas of savings, and potential overspending. Users can schedule recurring payments, track investments, and set goals for short-term or long-term financial objectives. With its secure, encrypted platform, BudgetBuddy ensures that sensitive financial data remains private and protected. Expert tips, financial advice, and suggestions for optimizing spending habits help users improve their financial literacy. It integrates with multiple bank accounts, credit cards, and digital wallets for seamless tracking. BudgetBuddy is perfect for individuals, families, and small business owners who want to take control of their finances and make informed decisions. Its intuitive design, data-driven insights, and real-time alerts transform complex financial management into an easy and actionable experience, making saving money smarter, easier, and stress-free.",
+    "size": 75,
+    "reviews": 1540,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 815 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "TravelMate",
+    "companyName": "GlobeTrotter Apps",
+    "id": 5,
+    "description": "TravelMate is a travel planning and exploration app designed to enhance the travel experience for adventurers, tourists, and business travelers. The app offers destination guides, real-time navigation, travel booking options, itinerary management, and local insights to ensure seamless journeys. Users can search for accommodations, flights, restaurants, and tours, compare prices, and make bookings directly within the app. TravelMate provides offline maps, public transport directions, currency converters, and travel safety tips to ensure convenience and security. Social features allow users to share photos, reviews, and tips with the TravelMate community. Notifications about weather, local events, and attractions keep travelers updated. Emergency assistance features provide access to local services, hospitals, and embassies. The app supports multiple languages and currencies, catering to a global audience. TravelMate is ideal for independent explorers, families, and business travelers seeking an organized, informative, and interactive travel companion. With detailed planning tools, offline support, and a strong community of travelers, TravelMate transforms the journey into a hassle-free, memorable adventure, making every trip well-prepared and enjoyable.",
+    "size": 150,
+    "reviews": 2200,
+    "ratingAvg": 4.8,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1367 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "PhotoFusion",
+    "companyName": "Creative Labs",
+    "id": 6,
+    "description": "PhotoFusion is a professional photo editing application designed for both amateur photographers and creative professionals. The app provides advanced editing tools including layers, masks, color correction, filters, AI-powered enhancements, text overlays, and blending modes. Users can retouch portraits, create collages, remove unwanted elements, and apply artistic effects. PhotoFusion also supports batch editing and high-resolution exports for print or social media sharing. Integration with cloud storage ensures that projects are saved safely and accessible across devices. Tutorials, templates, and presets help users quickly create stunning visuals without extensive experience. The app fosters creativity by allowing users to experiment with photo manipulation, graphic design, and digital art. With an intuitive interface, PhotoFusion provides powerful editing capabilities while remaining accessible to beginners. Security and privacy are emphasized with encrypted project storage. Whether creating professional portfolios or sharing creative content on social media, PhotoFusion offers a complete suite of tools to inspire and empower visual creativity.",
+    "size": 110,
+    "reviews": 1340,
+    "ratingAvg": 4.6,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 22 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 768 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "MindEase",
+    "companyName": "Wellness Tech",
+    "id": 7,
+    "description": "MindEase is a meditation and mental wellness app designed to help users manage stress, anxiety, and improve focus. It provides guided meditations, breathing exercises, mindfulness practices, sleep sounds, and stress-relief activities. Users can track their mental health progress over time and set daily reminders to maintain consistency. The app includes customizable meditation durations, mood tracking, and inspirational content. Community support and expert tips are integrated to provide holistic wellness guidance. MindEase also analyzes patterns in user behavior and suggests activities to enhance relaxation and mental clarity. The app ensures privacy with secure, encrypted storage for user data and emphasizes evidence-based wellness practices. Whether for beginners or advanced practitioners, MindEase transforms mindfulness into a daily habit that improves emotional well-being, mental resilience, and overall life satisfaction.",
+    "size": 80,
+    "reviews": 1600,
+    "ratingAvg": 4.7,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 892 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "LanguageMaster",
+    "companyName": "EduSoft",
+    "id": 8,
+    "description": "LanguageMaster is a language learning app that helps users master new languages through interactive lessons, games, quizzes, and conversational exercises. It supports multiple languages and uses AI-driven adaptive learning to personalize the experience according to user skill level. The app includes vocabulary building, grammar lessons, listening comprehension, speaking exercises, pronunciation guides, and cultural notes. Progress tracking and gamification features keep users motivated. Community forums allow learners to practice with peers and native speakers. Offline access ensures uninterrupted learning. LanguageMaster is suitable for beginners, travelers, and advanced learners aiming to improve fluency. It focuses on practical communication skills while providing a structured, engaging, and immersive learning experience. With regular updates and new content, LanguageMaster makes learning a new language fun, interactive, and achievable, helping users expand their horizons and communicate confidently in different cultures.",
+    "size": 105,
+    "reviews": 1450,
+    "ratingAvg": 4.6,
+    "downloads": 590000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 855 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "EduQuest",
+    "companyName": "LearnTech Innovations",
+    "id": 9,
+    "description": "EduQuest is a comprehensive educational platform designed to provide students, teachers, and lifelong learners with interactive learning experiences. The app includes video lessons, quizzes, study materials, and practice exams across multiple subjects and grade levels. Adaptive learning algorithms analyze performance and provide personalized recommendations, ensuring that learners focus on areas needing improvement. EduQuest supports collaborative learning through discussion forums, group projects, and peer-to-peer feedback. Offline access ensures continuity of study even without internet connectivity. Gamification elements such as badges, achievements, and leaderboards enhance motivation and engagement. Teachers can track student progress, assign tasks, and provide feedback in real-time. EduQuest also provides career guidance, skills assessment, and interactive tutorials for competitive exams. With a focus on quality content, accessibility, and personalized learning paths, EduQuest empowers learners to achieve academic success and develop critical thinking skills, making education engaging, effective, and enjoyable.",
+    "size": 130,
+    "reviews": 1650,
+    "ratingAvg": 4.7,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 22 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 968 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "SafeDrive",
+    "companyName": "AutoSecure Ltd.",
+    "id": 10,
+    "description": "SafeDrive is an intelligent driving companion app aimed at enhancing road safety and improving driving habits. The app monitors driving behavior, including speed, braking, acceleration, and phone usage while driving, and provides real-time feedback and safety alerts. SafeDrive includes features such as route optimization, collision warnings, fatigue detection, and emergency assistance notifications. Users can track their driving score over time, set goals for safer driving, and earn rewards for good driving behavior. Family and fleet monitoring options allow parents and companies to track driving performance remotely. Integration with vehicle sensors and GPS ensures accurate data collection, and offline support enables continuous operation without connectivity. SafeDrive emphasizes privacy, encrypting all sensitive driving data. The app combines safety, convenience, and analytics to help drivers improve their skills, reduce accidents, and enjoy stress-free journeys. It is ideal for individual drivers, parents, and fleet managers seeking to foster safer driving practices and prevent road incidents.",
+    "size": 90,
+    "reviews": 1980,
+    "ratingAvg": 4.6,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 22 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 980 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "NewsPulse",
+    "companyName": "Global Media Apps",
+    "id": 11,
+    "description": "NewsPulse is a comprehensive news aggregator app that delivers personalized, real-time news from global sources directly to your device. The app uses AI-powered algorithms to curate content based on user preferences, reading habits, and trending topics. NewsPulse covers a wide range of categories including world news, technology, business, health, entertainment, sports, and lifestyle. Users can save articles for offline reading, share content with friends, and set up notifications for breaking news. Interactive features such as polls, comments, and community discussions enable engagement with other readers. NewsPulse also provides multimedia content including videos, podcasts, and photo galleries to enhance the user experience. The app emphasizes credibility by sourcing content from verified news outlets and fact-checking articles. With an intuitive interface and customizable layout, NewsPulse ensures users stay informed and engaged efficiently. Privacy and data security are prioritized, giving users control over their data and personalized settings. NewsPulse transforms news consumption into a fast, reliable, and interactive experience for informed citizens.",
+    "size": 115,
+    "reviews": 1720,
+    "ratingAvg": 4.5,
+    "downloads": 810000,
+    "ratings": [
+      { "name": "1 star", "count": 28 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 767 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "ShopSmart",
+    "companyName": "Retail Innovations",
+    "id": 12,
+    "description": "ShopSmart is a comprehensive shopping assistant app that enhances the online and offline shopping experience by helping users find the best deals, discounts, and product recommendations. The app aggregates offers from multiple e-commerce platforms and physical stores, allowing users to compare prices, read reviews, and make informed purchasing decisions. Features include smart shopping lists, wishlist tracking, barcode scanning, deal alerts, and loyalty program integration. ShopSmart uses AI-powered recommendations to suggest products based on user preferences, purchase history, and trending items. The app also provides personalized notifications for limited-time offers, seasonal sales, and new product launches. Social features enable sharing deals with friends, leaving product reviews, and participating in community discussions. ShopSmart supports secure payment options and tracks delivery statuses to provide a seamless shopping experience. With its user-friendly interface, detailed analytics, and focus on saving time and money, ShopSmart empowers consumers to shop smartly, efficiently, and safely, transforming the way they approach retail.",
+    "size": 125,
+    "reviews": 2050,
+    "ratingAvg": 4.7,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 630 },
+      { "name": "5 star", "count": 1052 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "WeatherWise",
+    "companyName": "Climate Tech Solutions",
+    "id": 13,
+    "description": "WeatherWise is an advanced weather forecasting app that delivers accurate, real-time updates on weather conditions globally. Users can view hourly, daily, and weekly forecasts for temperature, precipitation, wind, humidity, and UV index. WeatherWise includes interactive weather maps, radar tracking, storm alerts, and climate data analytics. Personalized notifications inform users about severe weather, upcoming rain, or temperature changes, allowing for better planning and safety. The app integrates with smart home devices and calendars to provide contextual alerts, such as suggesting appropriate clothing or travel adjustments. Educational content helps users understand weather patterns and climate trends. Offline mode ensures essential weather information remains accessible even without an internet connection. WeatherWise prioritizes data accuracy, usability, and intuitive design, making it ideal for travelers, outdoor enthusiasts, and anyone needing reliable weather insights. With its combination of precise forecasts, alerts, and analytics, WeatherWise empowers users to stay prepared and make informed decisions.",
+    "size": 100,
+    "reviews": 1800,
+    "ratingAvg": 4.6,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 915 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "FitMeal Planner",
+    "companyName": "Healthy Living Apps",
+    "id": 14,
+    "description": "FitMeal Planner is a nutrition-focused app designed to help users plan, track, and improve their diet and meal habits. The app offers personalized meal plans based on age, weight, fitness goals, and dietary preferences, including vegan, keto, paleo, and gluten-free options. Users can track calorie intake, macronutrients, water consumption, and meal timings. FitMeal Planner provides recipe suggestions, grocery lists, and portion guides to simplify meal preparation. Integration with wearable devices enables users to adjust nutrition plans according to activity levels and fitness goals. The app includes educational content on nutrition, healthy eating tips, and strategies for managing lifestyle diseases. Social features encourage sharing progress and recipes with friends or community groups. Offline access ensures users can view meal plans without internet connectivity. FitMeal Planner emphasizes data privacy, secure storage, and ease of use. By combining personalized nutrition guidance with interactive tracking, the app helps users maintain a balanced diet, achieve fitness goals, and foster healthier eating habits.",
+    "size": 90,
+    "reviews": 1650,
+    "ratingAvg": 4.7,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 560 },
+      { "name": "5 star", "count": 842 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "EventPlanner Pro",
+    "companyName": "Smart Events Ltd.",
+    "id": 15,
+    "description": "EventPlanner Pro is a professional event management app designed to simplify planning, organizing, and executing events of any scale. The app allows users to manage guest lists, send invitations, track RSVPs, schedule activities, and set reminders. Features include budget tracking, vendor management, seating arrangements, real-time updates, and task delegation. EventPlanner Pro supports team collaboration by enabling multiple users to contribute to planning, assign responsibilities, and communicate within the app. Users can integrate calendars, track milestones, and monitor progress through interactive dashboards. The app also offers templates for common event types, including weddings, corporate events, conferences, and parties. Security features protect sensitive guest and financial information. EventPlanner Pro ensures smooth, stress-free event planning by combining comprehensive tools, analytics, and a user-friendly interface. It transforms complex event coordination into an organized, professional, and enjoyable experience for individuals and teams alike.",
+    "size": 140,
+    "reviews": 1420,
+    "ratingAvg": 4.6,
+    "downloads": 580000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 792 }
+    ]
+  },
+  {
+    "image": "../src/assets/demo-app (1).webp",
+    "title": "DailyJournal",
+    "companyName": "Mindful Apps",
+    "id": 16,
+    "description": "DailyJournal is a comprehensive journaling and personal reflection app designed to help users document thoughts, track habits, and achieve mental clarity. The app provides tools for text journaling, photo and audio entries, mood tracking, goal setting, and gratitude logging. Users can categorize entries, search past records, and review trends over time. DailyJournal includes prompts for self-reflection, mindfulness exercises, and productivity tips. Password protection and encrypted storage ensure that private thoughts remain secure. Offline access allows journaling anytime, anywhere. Notifications and reminders encourage consistency, making it easier to maintain daily habits. With its customizable interface, DailyJournal offers a personal and engaging space for creativity, reflection, and goal achievement. The app is suitable for anyone seeking self-improvement, mindfulness, and structured personal growth. By integrating habit tracking, mood analysis, and journaling, DailyJournal empowers users to enhance mental well-being, stay organized, and cultivate meaningful daily practices.",
+    "size": 85,
+    "reviews": 1580,
+    "ratingAvg": 4.7,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 887 }
+    ]
+  }
+]
