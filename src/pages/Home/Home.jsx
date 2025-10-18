@@ -2,13 +2,18 @@ import React from 'react';
 import AppStore from '../../assets/App Store.png'
 import GooglePlay from '../../assets/google play.png'
 import herobanner from '../../assets/hero.png'
-import { useLoaderData } from 'react-router';
+import {useLoaderData, useNavigate } from 'react-router';
 import Apps from '../Apps/Apps';
+import SingleApp from '../SingleApp/SingleApp';
+
 
 
 const Home = () => {
     const AppsFakeData = useLoaderData()
-    
+    const limitedData = AppsFakeData.slice(0, 8)
+    const navigate = useNavigate()
+
+
     return (
         <div>
             <div className='bg-gray-100 text-center'>
@@ -46,7 +51,14 @@ const Home = () => {
                 {/* Trending Apps */}
                 <h2 className='text-4xl font-bold pt-10'>Trending Apps</h2>
                 <p className='pt-6 text-xl'>Explore All Trending Apps on the Market developed by us</p>
-                <Apps AppsFakeData={AppsFakeData}></Apps>
+                <div className='pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-50'>
+                    {
+                        limitedData.map(appItem => <SingleApp key={appItem.id} appItem={appItem}></SingleApp>)
+                    }
+                </div>
+                <div className='py-6'>
+                    <button onClick={()=> navigate("/apps")} className='btn bg-linear-to-t from-[#632EE3] to-[#9F62F2] text-white'>Show All</button>
+                </div>
             </div>
         </div>
     );
