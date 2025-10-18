@@ -20,7 +20,7 @@ const Home = () => {
                 <h1 className='text-6xl font-bold pt-[50px]'>We Build<br></br><span className='bg-linear-to-t from-[#632EE3] to-[#9F62F2] inline-block text-transparent bg-clip-text'>Productive</span> Apps</h1>
                 <p className='pt-[20px]'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br></br>Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='pt-[20px]'>
-                    <button className='btn mr-3'><img src={GooglePlay} className='h-[20px]' alt="" />Google Play</button>
+                    <button  className='btn mr-3'><img src={GooglePlay} className='h-[20px]' alt="" />Google Play</button>
                     <button className='btn'><img src={AppStore} className='h-[20px]' alt="" />App Store</button>
                 </div>
                 <div className='flex justify-center pt-[20px]'>

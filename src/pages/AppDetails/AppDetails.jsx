@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import React, { useState } from 'react';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import downloadsIcon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
 import reviewIcon from "../../assets/icon-review.png"
@@ -14,6 +14,31 @@ const AppDetails = () => {
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === appId);
     const { title, image, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleApp;
+
+    const [click, setClick] = useState(false)
+
+
+    const [installed, setInstalled] = useState([]);
+    const navigate = useNavigate();
+
+    const handleInstall = (app) => {
+        // Get existing installed apps from localStorage
+        const stored = JSON.parse(localStorage.getItem('installedApps')) || [];
+
+        // Check if this app is already installed
+        const alreadyInstalled = stored.find(item => item.id === app.id);
+
+        if (!alreadyInstalled) {
+            const updated = [...stored, app];
+            localStorage.setItem('installedApps', JSON.stringify(updated));
+            setInstalled(updated);
+        }
+    };
+
+
+    const goToInstalledPage = () => {
+        navigate('/installation');
+    };
     return (
         <div className='bg-gray-100'>
             <div className='flex gap-30 mx-30 pt-20'>
@@ -41,13 +66,27 @@ const AppDetails = () => {
                             <h2 className='text-5xl font-bold'>{reviews}</h2>
                         </div>
                     </div>
+                    <div className='mt-5'>
+                        <button
+                            onClick={() => handleInstall(singleApp)}
+                            disabled={installed.some(item => item.id === singleApp.id)}
+                            className={`btn w-full text-white text-lg ${installed.some(item => item.id === singleApp.id)
+                                ? 'bg-gray-400 cursor-not-allowed'
+                                : 'bg-[#00D390]'
+                                }`}
+                        >
+                            {installed.some(item => item.id === singleApp.id)
+                                ? 'Installed'
+                                : `Install Now (${singleApp.size}MB)`}
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="divider mx-30"></div>
             <div className='mx-30 flex justify-center'>
                 <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={ratings} layout="vertical" margin={{top: 20, right: 0, bottom: 20, left: 0}}>
-                        <XAxis type="number" stroke="#808080"  />
+                    <BarChart data={ratings} layout="vertical" margin={{ top: 20, right: 0, bottom: 20, left: 0 }}>
+                        <XAxis type="number" stroke="#808080" />
                         <YAxis type="category" dataKey="name" stroke="#808080" />
                         <Tooltip />
                         <Bar dataKey="count" fill="#FF8811" barSize={25} />

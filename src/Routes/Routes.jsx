@@ -14,26 +14,43 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                loader: () => fetch("AppsFakeData.json"),
+                loader: async ()=> {
+                    const res =await fetch("/AppsFakeData.json");
+                    if(!res.ok) throw new Error ('Failed to load AppsFakeData.json');
+                    return res.json()
+                },
                 Component: Home,
             },
             {
                 path: "/apps",
-                loader: () => fetch("AppsFakeData.json"),
+                loader: async ()=> {
+                    const res =await fetch("/AppsFakeData.json");
+                    if(!res.ok) throw new Error ('Failed to load AppsFakeData.json');
+                    return res.json()
+                },
                 Component: Apps,
             },
             {
                 path:"/installation",
+                loader: async ()=> {
+                    const res =await fetch("/AppsFakeData.json");
+                    if(!res.ok) throw new Error ('Failed to load AppsFakeData.json');
+                    return res.json()
+                },
                 Component: Installation,
+            },
+            {
+                path: "/bookDetails/:id",
+                loader: async ()=> {
+                    const res =await fetch("/AppsFakeData.json");
+                    if(!res.ok) throw new Error ('Failed to load AppsFakeData.json');
+                    return res.json()
+                },
+                Component: AppDetails,
             },
             {
                 path: "*",
                 element: <ErrorPage></ErrorPage>
-            },
-            {
-                path: "/bookDetails/:id",
-                loader: () => fetch("/AppsFakeData.json"),
-                Component: AppDetails,
             }
         ]
     },
