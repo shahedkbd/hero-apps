@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import downloadsIcon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
+import { toast } from 'react-toastify';
 
 
 
@@ -64,7 +65,7 @@ const Installation = () => {
                     </div>
 
                     {installedApps.length === 0 ? (
-                        <p className="text-gray-600">No apps installed yet.</p>
+                        <p className="text-gray-600 text-center text-4xl mt-4">No apps installed yet.</p>
                     ) : (
                         <div className="space-y-3">
                             {installedApps.map(app => (
@@ -90,7 +91,10 @@ const Installation = () => {
                                         </div>
                                         <div className='pr-2'>
                                             <button
-                                                onClick={() => handleUninstall(app.id)}
+                                                onClick={() => {
+                                                    handleUninstall(app.id);
+                                                    toast(`${app.title} uninstall from your device`)
+                                                }}
                                                 className="btn w-full bg-[#00D390] text-white font-medium py-2 rounded-lg transition-all duration-300"
                                             >
                                                 Uninstall

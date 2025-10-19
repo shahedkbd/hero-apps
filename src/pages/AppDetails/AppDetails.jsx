@@ -4,6 +4,7 @@ import downloadsIcon from "../../assets/icon-downloads.png"
 import ratingIcon from "../../assets/icon-ratings.png"
 import reviewIcon from "../../assets/icon-review.png"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { toast } from 'react-toastify';
 
 
 
@@ -22,10 +23,8 @@ const AppDetails = () => {
     const navigate = useNavigate();
 
     const handleInstall = (app) => {
-        // Get existing installed apps from localStorage
         const stored = JSON.parse(localStorage.getItem('installedApps')) || [];
 
-        // Check if this app is already installed
         const alreadyInstalled = stored.find(item => item.id === app.id);
 
         if (!alreadyInstalled) {
@@ -68,7 +67,10 @@ const AppDetails = () => {
                     </div>
                     <div className='mt-5'>
                         <button
-                            onClick={() => handleInstall(singleApp)}
+                            onClick={() => {
+                                handleInstall(singleApp);
+                                toast(`Yahoo!! ${title} Installed Successfully`)
+                            }}
                             disabled={installed.some(item => item.id === singleApp.id)}
                             className={`btn w-full text-white text-lg ${installed.some(item => item.id === singleApp.id)
                                 ? 'bg-gray-400 cursor-not-allowed'

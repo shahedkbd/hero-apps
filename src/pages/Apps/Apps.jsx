@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SingleApp from '../SingleApp/SingleApp';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 
 const Apps = () => {
     const AppsFakeData = useLoaderData(); // Loader থেকে সব ডাটা
@@ -8,9 +8,7 @@ const Apps = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [loading, setLoading] = useState(false);
 
-    // 🔍 Debounced Search Effect
     useEffect(() => {
-        // প্রতি বার টাইপ করলে loading শুরু হবে
         setLoading(true);
 
         const delayDebounce = setTimeout(() => {
@@ -24,11 +22,13 @@ const Apps = () => {
                 setFilteredApps(filtered);
             }
             setLoading(false);
-        }, 500); // 500ms debounce delay
+        }, 500); 
 
         return () => clearTimeout(delayDebounce);
     }, [searchTerm, AppsFakeData]);
 
+
+    const navigate = useNavigate()
     return (
         <div className='bg-gray-100 min-h-screen pb-10'>
             {/* Header Section */}
@@ -74,8 +74,11 @@ const Apps = () => {
                         Searching...
                     </div>
                 ) : filteredApps.length === 0 ? (
-                    <div className='text-center text-gray-500 py-10 text-lg'>
-                        No apps found 😔
+                    <div className='text-center text-5xl font-bold text-gray-500 py-10'>
+                        No Apps Found
+                        <div className='mt-6 '>
+                            <button onClick={()=> navigate("/apps")} className='btn bg-linear-to-t from-[#632EE3] to-[#9F62F2] text-white'>Show All Apps</button>
+                        </div>
                     </div>
                 ) : (
                     <div className='pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-10'>
