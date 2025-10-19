@@ -24,11 +24,11 @@ const Home = () => {
                     <button className='btn'><img src={AppStore} className='h-[20px]' alt="" />App Store</button>
                 </div>
                 <div className='flex justify-center pt-[20px]'>
-                    <img src={herobanner} className='h-96' alt="" />
+                    <img src={herobanner} className='h-96 max-md:h-55 max-sm:h-30' alt="" />
                 </div>
                 <div className='min-h-[200px] bg-linear-to-t from-[#632EE3] to-[#9F62F2] text-white'>
                     <h2 className='text-4xl font-bold pt-10'>Trusted by Millions, Built for You</h2>
-                    <div className='pt-6 pb-10 flex gap-30 justify-center'>
+                    <div className='pt-6 pb-10 flex max-sm:flex-col lg:gap-30 justify-center'>
                         <div className='space-y-2'>
                             <p>Total Downloads</p>
                             <h3 className='text-5xl font-bold'>29.6M</h3>
@@ -51,7 +51,7 @@ const Home = () => {
                 {/* Trending Apps */}
                 <h2 className='text-4xl font-bold pt-10'>Trending Apps</h2>
                 <p className='pt-6 text-xl'>Explore All Trending Apps on the Market developed by us</p>
-                <div className='pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-50'>
+                <div className='pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:mx-5 md:mx-20 lg:mx-50'>
                     {
                         limitedData.map(appItem => <SingleApp key={appItem.id} appItem={appItem}></SingleApp>)
                     }

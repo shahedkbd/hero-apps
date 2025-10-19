@@ -43,7 +43,7 @@ const Installation = () => {
                 <p>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='bg-gray-100'>
-                <div className="p-6">
+                <div className="p-6 max-sm:p-1">
                     <div className=' flex justify-between'>
                         <div>
                             <h1 className="text-3xl font-bold mb-4">
@@ -69,15 +69,15 @@ const Installation = () => {
                     ) : (
                         <div className="space-y-3">
                             {installedApps.map(app => (
-                                <div key={app.id} className="p-1 rounded-lg shadow flex justify-between gap-5 bg-white">
-                                    <div className='w-[5%]'>
+                                <div key={app.id} className="p-1 rounded-lg shadow flex justify-between gap-5 max-sm:gap-1  bg-white">
+                                    <div className='lg:w-[5%]'>
                                         <img src={app.image} alt={app.title} className="w-full p-1 h-20 object-cover rounded-md" />
                                     </div>
 
                                     <div className='flex justify-between items-center w-[95%]'>
                                         <div className='space-y-2'>
                                             <div><h2 className="text-xl font-semibold">{app.title}</h2></div>
-                                            <div className='flex gap-4'>
+                                            <div className='flex max-sm:gap-1 gap-4'>
                                                 <div className='flex gap-2'>
                                                     <img src={downloadsIcon} className='h-[20px]' alt="" />
                                                     <p className="text-sm mb-1">{app.downloads}</p>

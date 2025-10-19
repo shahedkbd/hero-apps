@@ -33,22 +33,17 @@ const AppDetails = () => {
             setInstalled(updated);
         }
     };
-
-
-    const goToInstalledPage = () => {
-        navigate('/installation');
-    };
     return (
         <div className='bg-gray-100'>
-            <div className='flex gap-30 mx-30 pt-20'>
-                <img className='h-[300px]' src={image} alt="" />
+            <div className='lg:flex lg:gap-30  lg:mx-30 pt-20'>
+                <img className='h-[300px] max-sm:justify-self-center md:justify-self-center' src={image} alt="" />
                 <div className='flex flex-col justify-center'>
-                    <div className='space-y-3'>
+                    <div className='space-y-3 max-sm:text-center md:text-center lg:text-left'>
                         <h2 className='text-3xl font-bold'>{title}</h2>
                         <p>Developed by: {companyName}</p>
                     </div>
                     <div className="divider"></div>
-                    <div className='flex gap-15'>
+                    <div className='lg:flex md:flex md:justify-center max-sm:self-center max-sm:space-y-5 gap-15'>
                         <div className='space-y-2'>
                             <img src={downloadsIcon} className='h-[30px]' alt="" />
                             <p>Downloads</p>
@@ -72,7 +67,7 @@ const AppDetails = () => {
                                 toast(`Yahoo!! ${title} Installed Successfully`)
                             }}
                             disabled={installed.some(item => item.id === singleApp.id)}
-                            className={`btn w-full text-white text-lg ${installed.some(item => item.id === singleApp.id)
+                            className={`btn max-md:w-full max-lg:w-full text-white text-lg ${installed.some(item => item.id === singleApp.id)
                                 ? 'bg-gray-400 cursor-not-allowed'
                                 : 'bg-[#00D390]'
                                 }`}
@@ -84,8 +79,8 @@ const AppDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="divider mx-30"></div>
-            <div className='mx-30 flex justify-center'>
+            <div className="divider max-md:mx-10 mx-30"></div>
+            <div className='min-lg:mx-30 min-md:mx-10 max-sm:mx-5 flex justify-center'>
                 <ResponsiveContainer width="100%" height={300}>
                     <BarChart data={ratings} layout="vertical" margin={{ top: 20, right: 0, bottom: 20, left: 0 }}>
                         <XAxis type="number" stroke="#808080" />
@@ -95,8 +90,8 @@ const AppDetails = () => {
                     </BarChart>
                 </ResponsiveContainer>
             </div>
-            <div className="divider mx-30"></div>
-            <div className='mx-30 space-y-3 pb-10'>
+            <div className="divider max-md:mx-10 mx-30"></div>
+            <div className='min-lg:mx-30 min-md:mx-10 max-sm:mx-5 space-y-3 pb-10'>
                 <h2 className='text-xl font-bold'>Description</h2>
                 <p>{description}</p>
             </div>

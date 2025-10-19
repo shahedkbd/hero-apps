@@ -3,7 +3,7 @@ import SingleApp from '../SingleApp/SingleApp';
 import { useLoaderData, useNavigate } from 'react-router';
 
 const Apps = () => {
-    const AppsFakeData = useLoaderData(); // Loader থেকে সব ডাটা
+    const AppsFakeData = useLoaderData();
     const [filteredApps, setFilteredApps] = useState(AppsFakeData);
     const [searchTerm, setSearchTerm] = useState('');
     const [loading, setLoading] = useState(false);
@@ -38,7 +38,7 @@ const Apps = () => {
             </div>
 
             {/* Search Section */}
-            <div className='flex justify-between items-center mx-10 md:mx-30 pt-10'>
+            <div className='flex justify-between items-center max-sm:mx-2 md:mx-30 lg:mx-30 pt-10'>
                 <h3 className='text-xl font-bold'>
                     ({filteredApps.length}) Apps Found
                 </h3>
@@ -62,7 +62,7 @@ const Apps = () => {
                         placeholder='Search apps...'
                         value={searchTerm}
                         onChange={e => setSearchTerm(e.target.value)}
-                        className='outline-none bg-transparent w-full'
+                        className='outline-none bg-transparent max-lg:w-full'
                     />
                 </label>
             </div>
@@ -81,7 +81,7 @@ const Apps = () => {
                         </div>
                     </div>
                 ) : (
-                    <div className='pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-10'>
+                    <div className='pt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:mx-10'>
                         {filteredApps.map(app => (
                             <SingleApp key={app.id} SingleAppData={app} />
                         ))}
